@@ -1,6 +1,5 @@
 import React from 'react';
-
-
+import  "./App.css";
 
 export default function App(){
   let menu=[
@@ -20,6 +19,7 @@ export default function App(){
     </div>
     <div>{ele.name}</div>
     <div>{ele.price}</div>
+    <button>Add</button>
   </div>
 
   ))}
