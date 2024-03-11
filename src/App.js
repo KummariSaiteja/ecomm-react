@@ -13,12 +13,12 @@ export default function App(){
   return(
     <div className="menu-container">
    {menu.map((ele)=>(
-    <div key={ele.id} >
+    <div key={ele.id} className="menu-card">
     <div>
-      <img src={ele.image} alt={ele.name} />
+      <img src={ele.image} alt={ele.name} className="menu-card-img" />
     </div>
     <div>{ele.name}</div>
-    <div>{ele.price}</div>
+    <div>Price:{ele.price}</div>
     <button>Add to cart</button>
   </div>
 
